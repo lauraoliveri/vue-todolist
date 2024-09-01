@@ -24,7 +24,6 @@ h1 {
     margin-top: 30px;
     margin-left: 30px;
     width: 350px;
-    height: 350px;
     padding: 20px;
     background-color: #E8EB94;
     border: 0.5px solid black;
@@ -38,6 +37,7 @@ ul {
 li {
     padding: 2px;
 }
+
 .sbarrato {
     text-decoration: line-through;
 }
@@ -47,6 +47,9 @@ li {
     border-color: black;
 }
 
-.remove-task {
-    display: none;
+
+.AddNewTask {
+    padding: 5px 7px;
+    border-radius: 50px;
+    border: 2px solid #c0c702;
 }

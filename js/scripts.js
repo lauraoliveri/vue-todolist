@@ -10,16 +10,23 @@
                 {task: "Rispondere alle email di lavoro", done: true},
                 {task:"Completare esercizio di Boolean", done: true},
                 {task: "Fare skincare e maschera viso", done: false},
-                {task: "Mettere nuovi articoli su Vinted", done: false}
-            ]
+                {task: "Mettere nuovi articoli su Vinted", done: false},
+            ],
+            SaveInputTask: ''
 
         }
      
     },
     methods: {
         RemoveTask (i) {
-            this.Todolist.splice(i, 1)
+            this.Todolist.splice(i, 1);
+        },
+        AddNewTask() {
+            this.Todolist.push(this.SaveInputTask);
         }
+
     }
   }).mount('#app')
+
+
 

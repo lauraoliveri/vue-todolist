@@ -6,15 +6,47 @@
     box-sizing: border-box;
 }
 
-/* General */
-
-.container {
-    margin: 0 auto;
-    width: 500px;
-    background-color: aquamarine;
-    padding: 10px;
+html {
+    font-family: "Roboto", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
+
+/* STYLE */
+
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.container {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    background-color: #E8EB94;
+    border: 0.5px solid black;
+}
+
+ul {
+    line-height: 2.0;
+    list-style: none;
+}
+
+li {
+    padding: 2px;
+}
 .sbarrato {
     text-decoration: line-through;
+}
+
+.DoneBtn {
+    padding: 3px 5px;
+    border-color: black;
+}
+
+.remove-task {
+    display: none;
 }

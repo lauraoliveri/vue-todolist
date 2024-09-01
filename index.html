@@ -7,6 +7,11 @@
     <!-- Css -->
      <link rel="stylesheet" href="style.css">
 
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <title>Vue Todo</title>
 </head>
 <body>
@@ -18,13 +23,19 @@
                     Vue To Do List
                 </h1>
 
+
                 <!-- Lista delle cose da fare -->
-                
                 <div>
                     <ul>
-                        <li v-for="element in Todolist" :class="element.done == true ? 'sbarrato': ' ' ">
+                        <li v-for="(element, index) in Todolist" :class="element.done == true ? 'sbarrato': ' ' ">
+                            
                             {{ element.task }}
+
+                            <button class="DoneBtn" @click="RemoveTask">
+                                &#x00d7;
+                            </button>
                         </li>
+                        
                     </ul>
                 </div>
             </div>

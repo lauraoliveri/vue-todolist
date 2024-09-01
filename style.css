@@ -1,0 +1,20 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+
+.container {
+    margin: 0 auto;
+    width: 500px;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.sbarrato {
+    text-decoration: line-through;
+}
